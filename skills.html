@@ -1,0 +1,541 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | Padala Chinmai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .skills-page {
+            min-height: 100vh;
+            padding: 80px 8%;
+        }
+
+        .skills-header {
+            max-width: 900px;
+            margin-bottom: 50px;
+        }
+
+        .skills-header h1 {
+            font-size: 55px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .skills-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+        }
+
+        .skill-card {
+            background: linear-gradient(145deg, #172033, #0f172a);
+            border: 1px solid #263449;
+            border-radius: 20px;
+            padding: 30px;
+            transition: 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-7px);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .skill-icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1e3a8a;
+            border-radius: 14px;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .skill-card h2 {
+            color: white;
+            font-size: 23px;
+            margin-bottom: 18px;
+        }
+
+        .skill-card p {
+            color: #94a3b8;
+            line-height: 1.7;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tags span {
+            background: #111827;
+            border: 1px solid #334155;
+            color: #cbd5e1;
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .skill-tags span:hover {
+            border-color: #60a5fa;
+            color: #60a5fa;
+        }
+
+        .learning-card {
+            margin-top: 30px;
+            background: linear-gradient(145deg, #172033, #0f172a);
+            border: 1px solid #263449;
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        .learning-card h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .learning-card p {
+            color: #94a3b8;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        @media (max-width: 900px) {
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .skills-page {
+                padding: 50px 20px;
+            }
+
+            .skills-header h1 {
+                font-size: 40px;
+            }
+
+            .skills-header p {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="profile">
+
+            <div class="profile-circle">
+                PC
+            </div>
+
+            <h2>
+                Padala Chinmai
+            </h2>
+
+            <p>
+                AI/ML Student
+            </p>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="about.html">
+                <span>👤</span>
+                About
+            </a>
+
+            <a href="skills.html" class="active">
+                <span>⚙</span>
+                Skills
+            </a>
+
+            <a href="education.html">
+                <span>🎓</span>
+                Education
+            </a>
+
+            <a href="projects.html">
+                <span>💻</span>
+                Projects
+            </a>
+
+            <a href="experience.html">
+                <span>💼</span>
+                Experience
+            </a>
+
+            <a href="certifications.html">
+                <span>📜</span>
+                Certifications
+            </a>
+
+            <a href="achievements.html">
+                <span>🏆</span>
+                Achievements
+            </a>
+
+            <a href="resume.html">
+                <span>📄</span>
+                Resume
+            </a>
+
+            <a href="contact.html">
+                <span>✉</span>
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="sidebar-social">
+
+            <a
+                href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+                target="_blank">
+                LinkedIn
+            </a>
+
+            <a
+                href="https://github.com/chinmaipadala031-sh"
+                target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <section class="skills-page">
+
+
+            <!-- HEADER -->
+
+            <div class="skills-header">
+
+                <p class="page-label">
+                    MY TECHNICAL SKILLS
+                </p>
+
+                <h1>
+                    Skills
+                </h1>
+
+                <p>
+
+                    My technical interests and skills are focused
+                    on Artificial Intelligence, Machine Learning,
+                    programming, data technologies, and modern
+                    development tools.
+
+                </p>
+
+            </div>
+
+
+            <!-- SKILLS GRID -->
+
+            <div class="skills-grid">
+
+
+                <!-- AI / ML -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        🤖
+                    </div>
+
+                    <h2>
+                        Artificial Intelligence & Machine Learning
+                    </h2>
+
+                    <p>
+                        Interested in developing intelligent systems
+                        and exploring machine learning concepts
+                        through practical projects.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>
+                            Artificial Intelligence
+                        </span>
+
+                        <span>
+                            Machine Learning
+                        </span>
+
+                        <span>
+                            Generative AI
+                        </span>
+
+                        <span>
+                            AI Agents
+                        </span>
+
+                        <span>
+                            LLMs
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROGRAMMING -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        💻
+                    </div>
+
+                    <h2>
+                        Programming
+                    </h2>
+
+                    <p>
+                        Programming knowledge developed through
+                        academic learning and project development.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            Programming
+                        </span>
+
+                        <span>
+                            Problem Solving
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CLOUD -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        ☁
+                    </div>
+
+                    <h2>
+                        Cloud Computing
+                    </h2>
+
+                    <p>
+                        Familiar with cloud computing concepts
+                        through learning and practical exposure
+                        during my Cloud Computing virtual internship.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>
+                            Cloud Computing
+                        </span>
+
+                        <span>
+                            Cloud Concepts
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DATA -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        📊
+                    </div>
+
+                    <h2>
+                        Data & Analytics
+                    </h2>
+
+                    <p>
+                        Interested in working with data and using
+                        analytical approaches to understand problems
+                        and build useful solutions.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>
+                            Data Analysis
+                        </span>
+
+                        <span>
+                            Data Handling
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WEB -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        🌐
+                    </div>
+
+                    <h2>
+                        Web Development
+                    </h2>
+
+                    <p>
+                        Building responsive and user-friendly web
+                        pages for academic and personal projects.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            Responsive Design
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOOLS -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        🛠
+                    </div>
+
+                    <h2>
+                        Tools & Technologies
+                    </h2>
+
+                    <p>
+                        Comfortable learning and working with
+                        modern development tools and technology
+                        platforms.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>
+                            GitHub
+                        </span>
+
+                        <span>
+                            VS Code
+                        </span>
+
+                        <span>
+                            Git
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CURRENT LEARNING -->
+
+            <div class="learning-card">
+
+                <h2>
+                    Currently Learning
+                </h2>
+
+                <p>
+
+                    I am continuously improving my knowledge in
+                    Artificial Intelligence, Machine Learning,
+                    Generative AI, AI Agents, cloud technologies,
+                    and practical software development.
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
+```

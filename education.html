@@ -1,0 +1,437 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Education | Padala Chinmai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .education-page {
+            min-height: 100vh;
+            padding: 80px 8%;
+        }
+
+        .education-header {
+            max-width: 900px;
+            margin-bottom: 55px;
+        }
+
+        .education-header h1 {
+            font-size: 55px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .education-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .education-list {
+            max-width: 1000px;
+        }
+
+        .education-card {
+            position: relative;
+
+            background: linear-gradient(
+                145deg,
+                #172033,
+                #0f172a
+            );
+
+            border: 1px solid #263449;
+
+            border-radius: 20px;
+
+            padding: 32px;
+
+            margin-bottom: 30px;
+
+            transition: 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-7px);
+
+            border-color: #3b82f6;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .education-card::before {
+            content: "";
+
+            position: absolute;
+
+            left: -8px;
+
+            top: 32px;
+
+            width: 5px;
+
+            height: calc(100% - 64px);
+
+            background: #3b82f6;
+
+            border-radius: 10px;
+        }
+
+        .education-year {
+            display: inline-block;
+
+            color: #60a5fa;
+
+            background: #111827;
+
+            border: 1px solid #334155;
+
+            padding: 7px 14px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            margin-bottom: 18px;
+        }
+
+        .education-card h2 {
+            color: white;
+
+            font-size: 25px;
+
+            margin-bottom: 10px;
+        }
+
+        .education-card h3 {
+            color: #60a5fa;
+
+            font-size: 17px;
+
+            font-weight: 600;
+
+            margin-bottom: 15px;
+        }
+
+        .education-card p {
+            color: #94a3b8;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+            margin-bottom: 10px;
+        }
+
+        .education-score {
+            display: inline-block;
+
+            margin-top: 10px;
+
+            color: #e2e8f0;
+
+            font-weight: bold;
+        }
+
+        .education-score span {
+            color: #60a5fa;
+        }
+
+        @media (max-width: 600px) {
+
+            .education-page {
+                padding: 50px 20px;
+            }
+
+            .education-header h1 {
+                font-size: 40px;
+            }
+
+            .education-header p {
+                font-size: 16px;
+            }
+
+            .education-card {
+                padding: 25px;
+            }
+
+            .education-card h2 {
+                font-size: 21px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="profile">
+
+            <div class="profile-circle">
+                PC
+            </div>
+
+            <h2>
+                Padala Chinmai
+            </h2>
+
+            <p>
+                AI/ML Student
+            </p>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="about.html">
+                <span>👤</span>
+                About
+            </a>
+
+            <a href="skills.html">
+                <span>⚙</span>
+                Skills
+            </a>
+
+            <a href="education.html" class="active">
+                <span>🎓</span>
+                Education
+            </a>
+
+            <a href="projects.html">
+                <span>💻</span>
+                Projects
+            </a>
+
+            <a href="experience.html">
+                <span>💼</span>
+                Experience
+            </a>
+
+            <a href="certifications.html">
+                <span>📜</span>
+                Certifications
+            </a>
+
+            <a href="achievements.html">
+                <span>🏆</span>
+                Achievements
+            </a>
+
+            <a href="resume.html">
+                <span>📄</span>
+                Resume
+            </a>
+
+            <a href="contact.html">
+                <span>✉</span>
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="sidebar-social">
+
+            <a
+                href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+                target="_blank">
+                LinkedIn
+            </a>
+
+            <a
+                href="https://github.com/chinmaipadala031-sh"
+                target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <section class="education-page">
+
+
+            <!-- HEADER -->
+
+            <div class="education-header">
+
+                <p class="page-label">
+                    MY EDUCATION
+                </p>
+
+                <h1>
+                    Education
+                </h1>
+
+                <p>
+
+                    My academic journey has helped me build a
+                    foundation in technology, programming, and
+                    Artificial Intelligence and Machine Learning.
+
+                </p>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+
+            <div class="education-list">
+
+
+                <!-- B.TECH -->
+
+                <div class="education-card">
+
+                    <div class="education-year">
+                        B.Tech
+                    </div>
+
+                    <h2>
+                        Artificial Intelligence & Machine Learning
+                    </h2>
+
+                    <h3>
+                        Kakatiya Institute of Technology & Science for Women
+                    </h3>
+
+                    <p>
+
+                        Pursuing a Bachelor of Technology with
+                        specialization in Artificial Intelligence
+                        and Machine Learning.
+
+                    </p>
+
+                    <div class="education-score">
+
+                        Degree:
+                        <span>
+                            B.Tech – AI & ML
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTERMEDIATE -->
+
+                <div class="education-card">
+
+                    <div class="education-year">
+                        Intermediate
+                    </div>
+
+                    <h2>
+                        Higher Secondary Education
+                    </h2>
+
+                    <h3>
+                        SR Junior College, Vinayak Nagar
+                    </h3>
+
+                    <p>
+
+                        Completed intermediate education with
+                        a focus on building academic and
+                        foundational knowledge.
+
+                    </p>
+
+                    <div class="education-score">
+
+                        Score:
+                        <span>
+                            69.1
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SSC -->
+
+                <div class="education-card">
+
+                    <div class="education-year">
+                        SSC
+                    </div>
+
+                    <h2>
+                        Secondary School Education
+                    </h2>
+
+                    <h3>
+                        Abhyasa The School, Vinayak Nagar
+                    </h3>
+
+                    <p>
+
+                        Completed secondary school education
+                        and developed the academic foundation
+                        for higher studies.
+
+                    </p>
+
+                    <div class="education-score">
+
+                        GPA:
+                        <span>
+                            9.0
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
+```

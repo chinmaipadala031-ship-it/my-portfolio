@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Padala Chinmai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-page {
+            min-height: 100vh;
+            padding: 80px 8%;
+        }
+
+        .contact-header {
+            max-width: 850px;
+            margin-bottom: 50px;
+        }
+
+        .contact-header h1 {
+            font-size: 55px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .contact-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            max-width: 1100px;
+        }
+
+        .contact-card {
+            background: linear-gradient(145deg, #172033, #0f172a);
+            border: 1px solid #263449;
+            border-radius: 20px;
+            padding: 35px;
+            transition: 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-7px);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+        }
+
+        .contact-card h2 {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card > p {
+            color: #94a3b8;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            min-width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #111827;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            font-size: 20px;
+        }
+
+        .contact-info h3 {
+            color: #60a5fa;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .contact-info p,
+        .contact-info a {
+            color: #cbd5e1;
+            font-size: 15px;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .contact-info a:hover {
+            color: #60a5fa;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #cbd5e1;
+            background: #111827;
+            border: 1px solid #334155;
+            padding: 12px 20px;
+            border-radius: 25px;
+            transition: 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: white;
+            border-color: #3b82f6;
+            transform: translateY(-3px);
+        }
+
+        .contact-message {
+            max-width: 1100px;
+            margin-top: 35px;
+            padding: 28px;
+            background: #111827;
+            border-left: 4px solid #3b82f6;
+            border-radius: 10px;
+        }
+
+        .contact-message p {
+            color: #94a3b8;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background: #3b82f6;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        @media (max-width: 800px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-page {
+                padding: 50px 20px;
+            }
+
+            .contact-header h1 {
+                font-size: 40px;
+            }
+
+            .contact-header p {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="profile">
+
+            <div class="profile-circle">
+                PC
+            </div>
+
+            <h2>
+                Padala Chinmai
+            </h2>
+
+            <p>
+                AI/ML Student
+            </p>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html">
+                <span>⌂</span> Home
+            </a>
+
+            <a href="about.html">
+                <span>👤</span> About
+            </a>
+
+            <a href="skills.html">
+                <span>⚙</span> Skills
+            </a>
+
+            <a href="education.html">
+                <span>🎓</span> Education
+            </a>
+
+            <a href="projects.html">
+                <span>💻</span> Projects
+            </a>
+
+            <a href="experience.html">
+                <span>💼</span> Experience
+            </a>
+
+            <a href="certifications.html">
+                <span>📜</span> Certifications
+            </a>
+
+            <a href="achievements.html">
+                <span>🏆</span> Achievements
+            </a>
+
+            <a href="resume.html">
+                <span>📄</span> Resume
+            </a>
+
+            <a href="contact.html" class="active">
+                <span>✉</span> Contact
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-social">
+
+            <a href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/chinmaipadala031-sh"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <section class="contact-page">
+
+            <div class="contact-header">
+
+                <p class="page-label">
+                    GET IN TOUCH
+                </p>
+
+                <h1>
+                    Contact Me
+                </h1>
+
+                <p>
+                    I am open to opportunities where I can learn, contribute,
+                    and grow as an Artificial Intelligence and Machine Learning
+                    professional. Feel free to connect with me.
+                </p>
+
+            </div>
+
+
+            <div class="contact-container">
+
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact-card">
+
+                    <h2>
+                        Let's Connect
+                    </h2>
+
+                    <p>
+                        Whether you are a recruiter, hiring manager,
+                        developer, or someone interested in technology,
+                        I would be happy to connect.
+                    </p>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ✉
+                        </div>
+
+                        <div class="contact-info">
+
+                            <h3>
+                                Email
+                            </h3>
+
+                            <a href="mailto:chinmaipadala031@gmail.com">
+                                chinmaipadala031@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📱
+                        </div>
+
+                        <div class="contact-info">
+
+                            <h3>
+                                Phone
+                            </h3>
+
+                            <a href="tel:9381013258">
+                                +91 9381013258
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LINKEDIN -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            in
+                        </div>
+
+                        <div class="contact-info">
+
+                            <h3>
+                                LinkedIn
+                            </h3>
+
+                            <a href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+                               target="_blank">
+                                linkedin.com/in/padala-chinmai
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GITHUB -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            </>
+                        </div>
+
+                        <div class="contact-info">
+
+                            <h3>
+                                GitHub
+                            </h3>
+
+                            <a href="https://github.com/chinmaipadala031-sh"
+                               target="_blank">
+                                github.com/chinmaipadala031-sh
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- OPPORTUNITY CARD -->
+
+                <div class="contact-card">
+
+                    <h2>
+                        Open to Opportunities
+                    </h2>
+
+                    <p>
+                        I am interested in opportunities related to
+                        Artificial Intelligence, Machine Learning,
+                        Data Science, Python, and Cloud Computing.
+                    </p>
+
+                    <p>
+                        I am eager to apply my technical knowledge,
+                        work on real-world problems, collaborate with
+                        teams, and continue learning new technologies.
+                    </p>
+
+
+                    <a href="mailto:chinmaipadala031@gmail.com"
+                       class="contact-button">
+                        Email Me
+                    </a>
+
+
+                    <div class="social-links">
+
+                        <a href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+                           target="_blank">
+                            LinkedIn
+                        </a>
+
+                        <a href="https://github.com/chinmaipadala031-sh"
+                           target="_blank">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM MESSAGE -->
+
+            <div class="contact-message">
+
+                <p>
+
+                    <strong style="color:#60a5fa;">
+                        Thank you for visiting my portfolio.
+                    </strong>
+
+                    <br>
+
+                    I look forward to connecting and exploring
+                    opportunities to contribute to innovative
+                    technology projects.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

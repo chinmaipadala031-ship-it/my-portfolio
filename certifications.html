@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certifications | Padala Chinmai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================
+           CERTIFICATIONS PAGE
+        ========================================= */
+
+        .certifications-page {
+            min-height: 100vh;
+            padding: 80px 8%;
+        }
+
+
+        /* =========================================
+           PAGE HEADER
+        ========================================= */
+
+        .certifications-header {
+            max-width: 850px;
+            margin-bottom: 50px;
+        }
+
+
+        .certifications-header h1 {
+            font-size: 55px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+
+        .certifications-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================================
+           CERTIFICATE GRID
+        ========================================= */
+
+        .certificates-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 30px;
+        }
+
+
+        /* =========================================
+           CERTIFICATE CARD
+        ========================================= */
+
+        .certificate-card {
+            background:
+                linear-gradient(
+                    145deg,
+                    #172033,
+                    #0f172a
+                );
+
+            border: 1px solid #263449;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .certificate-card:hover {
+            transform: translateY(-8px);
+
+            border-color: #3b82f6;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.35);
+        }
+
+
+        /* =========================================
+           CERTIFICATE IMAGE
+        ========================================= */
+
+        .certificate-image {
+            width: 100%;
+            height: 350px;
+
+            background: white;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+
+        .certificate-image img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
+
+            transition:
+                transform 0.4s ease;
+        }
+
+
+        .certificate-card:hover
+        .certificate-image img {
+            transform: scale(1.03);
+        }
+
+
+        /* =========================================
+           CERTIFICATE INFORMATION
+        ========================================= */
+
+        .certificate-info {
+            padding: 25px;
+        }
+
+
+        .certificate-info h2 {
+            font-size: 23px;
+
+            color: white;
+
+            margin-bottom: 10px;
+        }
+
+
+        .certificate-issuer {
+            color: #60a5fa;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            margin-bottom: 12px;
+        }
+
+
+        .certificate-info p {
+            color: #94a3b8;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================================
+           VIEW BUTTON
+        ========================================= */
+
+        .certificate-button {
+            display: inline-block;
+
+            padding: 10px 18px;
+
+            border: 1px solid #374151;
+
+            border-radius: 8px;
+
+            color: #e5e7eb;
+
+            font-size: 13px;
+
+            transition: 0.3s ease;
+        }
+
+
+        .certificate-button:hover {
+            background: #2563eb;
+
+            border-color: #2563eb;
+
+            color: white;
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .certificates-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .certifications-page {
+                padding: 50px 20px;
+            }
+
+
+            .certifications-header h1 {
+                font-size: 40px;
+            }
+
+
+            .certifications-header p {
+                font-size: 16px;
+            }
+
+
+            .certificate-image {
+                height: 280px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================= -->
+
+    <aside class="sidebar">
+
+
+        <!-- PROFILE -->
+
+        <div class="profile">
+
+            <div class="profile-circle">
+                PC
+            </div>
+
+            <h2>
+                Padala Chinmai
+            </h2>
+
+            <p>
+                AI/ML Student
+            </p>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <a href="index.html">
+                <span>⌂</span>
+                Home
+            </a>
+
+
+            <a href="about.html">
+                <span>👤</span>
+                About
+            </a>
+
+
+            <a href="skills.html">
+                <span>⚙</span>
+                Skills
+            </a>
+
+
+            <a href="education.html">
+                <span>🎓</span>
+                Education
+            </a>
+
+
+            <a href="projects.html">
+                <span>💻</span>
+                Projects
+            </a>
+
+
+            <a href="experience.html">
+                <span>💼</span>
+                Experience
+            </a>
+
+
+            <a
+                href="certifications.html"
+                class="active">
+
+                <span>📜</span>
+
+                Certifications
+
+            </a>
+
+
+            <a href="achievements.html">
+                <span>🏆</span>
+                Achievements
+            </a>
+
+
+            <a href="resume.html">
+                <span>📄</span>
+                Resume
+            </a>
+
+
+            <a href="contact.html">
+                <span>✉</span>
+                Contact
+            </a>
+
+
+        </nav>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="sidebar-social">
+
+
+            <a
+                href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+                target="_blank">
+
+                LinkedIn
+
+            </a>
+
+
+            <a
+                href="https://github.com/chinmaipadala031-sh"
+                target="_blank">
+
+                GitHub
+
+            </a>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main class="main-content">
+
+
+        <section class="certifications-page">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="certifications-header">
+
+
+                <p class="page-label">
+                    MY CERTIFICATIONS
+                </p>
+
+
+                <h1>
+                    Certifications
+                </h1>
+
+
+                <p>
+
+                    A collection of certifications,
+                    workshops, internship certificates,
+                    and hackathon participation certificates
+                    earned during my learning journey.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 CERTIFICATES
+            ========================================= -->
+
+            <div class="certificates-grid">
+
+
+
+                <!-- =====================================
+                     CERTIFICATE 1
+                ====================================== -->
+
+                <div class="certificate-card">
+
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="brainic-ai-ml-python.jpg"
+                            alt="AI ML Python Certificate">
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+
+                        <h2>
+                            AI / ML / Python
+                        </h2>
+
+
+                        <div class="certificate-issuer">
+                            Brainic Academy
+                        </div>
+
+
+                        <p>
+
+                            Certified Practitioner certificate
+                            recognizing technical expertise in
+                            Artificial Intelligence, Machine
+                            Learning and Python.
+
+                            <br><br>
+
+                            Issued: 03 July 2026
+
+                            <br>
+
+                            Certificate ID:
+                            B1063610043
+
+                        </p>
+
+
+                        <a
+                            href="brainic-ai-ml-python.jpg"
+                            target="_blank"
+                            class="certificate-button">
+
+                            View Certificate
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =====================================
+                     CERTIFICATE 2
+                ====================================== -->
+
+                <div class="certificate-card">
+
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="brainic-internship.png"
+                            alt="Artificial Intelligence Internship Certificate">
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+
+                        <h2>
+                            Artificial Intelligence
+                            Short-Term Internship
+                        </h2>
+
+
+                        <div class="certificate-issuer">
+                            Brainic Academy
+                        </div>
+
+
+                        <p>
+
+                            Successfully completed the
+                            Artificial Intelligence Short-Term
+                            Internship Program in July 2026.
+
+                            <br><br>
+
+                            Industry-Focused Capstone Project.
+
+                            <br><br>
+
+                            Issued: 05 July 2026
+
+                            <br>
+
+                            Certificate ID:
+                            BINTC541
+
+                        </p>
+
+
+                        <a
+                            href="brainic-internship.png"
+                            target="_blank"
+                            class="certificate-button">
+
+                            View Certificate
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =====================================
+                     CERTIFICATE 3
+                ====================================== -->
+
+                <div class="certificate-card">
+
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="generative-ai.png"
+                            alt="Generative AI Workshop Certificate">
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+
+                        <h2>
+                            Generative AI Workshop
+                        </h2>
+
+
+                        <div class="certificate-issuer">
+                            Brainic Academy
+                        </div>
+
+
+                        <p>
+
+                            Successfully completed the
+                            Generative AI Workshop conducted
+                            by Brainic.
+
+                            <br><br>
+
+                            Skills Covered:
+
+                            Gen AI Foundations,
+                            Automation Tools,
+                            AI Agents,
+                            LLMs and AI Tools.
+
+                            <br><br>
+
+                            Issued: 13 August 2026
+
+                        </p>
+
+
+                        <a
+                            href="generative-ai.png"
+                            target="_blank"
+                            class="certificate-button">
+
+                            View Certificate
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =====================================
+                     CERTIFICATE 4
+                ====================================== -->
+
+                <div class="certificate-card">
+
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="codealpha-cloud.png"
+                            alt="CodeAlpha Cloud Computing Certificate">
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+
+                        <h2>
+                            Cloud Computing
+                            Virtual Internship
+                        </h2>
+
+
+                        <div class="certificate-issuer">
+                            CodeAlpha
+                        </div>
+
+
+                        <p>
+
+                            Successfully completed the
+                            CodeAlpha Virtual Internship
+                            Program in Cloud Computing.
+
+                            <br><br>
+
+                            Duration:
+
+                            20 August 2026 –
+                            20 September 2026
+
+                            <br><br>
+
+                            Issued:
+                            20 September 2026
+
+                        </p>
+
+
+                        <a
+                            href="codealpha-cloud.png"
+                            target="_blank"
+                            class="certificate-button">
+
+                            View Certificate
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =====================================
+                     CERTIFICATE 5
+                ====================================== -->
+
+                <div class="certificate-card">
+
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="nn-hackathon.png"
+                            alt="NN Hackathon 2026 Certificate">
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+
+                        <h2>
+                            NN Hackathon 2026
+                        </h2>
+
+
+                        <div class="certificate-issuer">
+                            NN AI Solutions
+                        </div>
+
+
+                        <p>
+
+                            Certificate of Participation
+                            recognizing participation in
+                            NN Hackathon 2026.
+
+                            <br><br>
+
+                            Date:
+                            19 September 2026
+
+                        </p>
+
+
+                        <a
+                            href="nn-hackathon.png"
+                            target="_blank"
+                            class="certificate-button">
+
+                            View Certificate
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =====================================
+                     CERTIFICATE 6
+                ====================================== -->
+
+                <div class="certificate-card">
+
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="hackwithhyderabad.png"
+                            alt="HackWithHyderabad 3.0 Certificate">
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+
+                        <h2>
+                            HackWithHyderabad 3.0
+                        </h2>
+
+
+                        <div class="certificate-issuer">
+                            Hack With India × Devnovate
+                        </div>
+
+
+                        <p>
+
+                            Certificate of Participation
+                            recognizing participation in
+                            HackWithHyderabad 3.0,
+                            an 8-hour technology hackathon.
+
+                            <br><br>
+
+                            Event Date:
+                            03 October 2026
+
+                            <br><br>
+
+                            Location:
+                            Microsoft Office, Hyderabad
+
+                        </p>
+
+
+                        <a
+                            href="hackwithhyderabad.png"
+                            target="_blank"
+                            class="certificate-button">
+
+                            View Certificate
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

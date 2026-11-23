@@ -1,0 +1,531 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience | Padala Chinmai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .experience-page {
+            min-height: 100vh;
+            padding: 80px 8%;
+        }
+
+        .experience-header {
+            max-width: 900px;
+            margin-bottom: 50px;
+        }
+
+        .experience-header h1 {
+            font-size: 55px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .experience-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .experience-card {
+            max-width: 1000px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #172033,
+                    #0f172a
+                );
+
+            border: 1px solid #263449;
+
+            border-radius: 20px;
+
+            padding: 35px;
+
+            margin-bottom: 30px;
+
+            transition: 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-7px);
+
+            border-color: #3b82f6;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.35);
+        }
+
+        .experience-top {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: flex-start;
+
+            gap: 20px;
+
+            margin-bottom: 20px;
+        }
+
+        .experience-title h2 {
+            color: white;
+
+            font-size: 27px;
+
+            margin-bottom: 8px;
+        }
+
+        .experience-title h3 {
+            color: #60a5fa;
+
+            font-size: 17px;
+
+            font-weight: 600;
+        }
+
+        .experience-date {
+            color: #cbd5e1;
+
+            background: #111827;
+
+            border: 1px solid #334155;
+
+            padding: 8px 14px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            white-space: nowrap;
+        }
+
+        .experience-card p {
+            color: #94a3b8;
+
+            line-height: 1.8;
+
+            font-size: 15px;
+
+            margin-bottom: 20px;
+        }
+
+        .experience-list {
+            padding-left: 20px;
+
+            margin-bottom: 20px;
+        }
+
+        .experience-list li {
+            color: #94a3b8;
+
+            line-height: 1.8;
+
+            margin-bottom: 10px;
+        }
+
+        .experience-list li::marker {
+            color: #60a5fa;
+        }
+
+        .experience-tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+        .experience-tags span {
+            background: #111827;
+
+            border: 1px solid #334155;
+
+            color: #cbd5e1;
+
+            padding: 8px 13px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+        }
+
+        .experience-note {
+            max-width: 1000px;
+
+            margin-top: 40px;
+
+            padding: 25px;
+
+            border-left: 4px solid #3b82f6;
+
+            background: #111827;
+
+            border-radius: 10px;
+        }
+
+        .experience-note p {
+            color: #94a3b8;
+
+            line-height: 1.8;
+
+            margin: 0;
+        }
+
+        @media (max-width: 700px) {
+
+            .experience-page {
+                padding: 50px 20px;
+            }
+
+            .experience-header h1 {
+                font-size: 40px;
+            }
+
+            .experience-header p {
+                font-size: 16px;
+            }
+
+            .experience-card {
+                padding: 25px;
+            }
+
+            .experience-top {
+                flex-direction: column;
+            }
+
+            .experience-title h2 {
+                font-size: 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="profile">
+
+            <div class="profile-circle">
+                PC
+            </div>
+
+            <h2>
+                Padala Chinmai
+            </h2>
+
+            <p>
+                AI/ML Student
+            </p>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="about.html">
+                <span>👤</span>
+                About
+            </a>
+
+            <a href="skills.html">
+                <span>⚙</span>
+                Skills
+            </a>
+
+            <a href="education.html">
+                <span>🎓</span>
+                Education
+            </a>
+
+            <a href="projects.html">
+                <span>💻</span>
+                Projects
+            </a>
+
+            <a href="experience.html" class="active">
+                <span>💼</span>
+                Experience
+            </a>
+
+            <a href="certifications.html">
+                <span>📜</span>
+                Certifications
+            </a>
+
+            <a href="achievements.html">
+                <span>🏆</span>
+                Achievements
+            </a>
+
+            <a href="resume.html">
+                <span>📄</span>
+                Resume
+            </a>
+
+            <a href="contact.html">
+                <span>✉</span>
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="sidebar-social">
+
+            <a
+                href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+                target="_blank">
+                LinkedIn
+            </a>
+
+            <a
+                href="https://github.com/chinmaipadala031-sh"
+                target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <section class="experience-page">
+
+
+            <!-- HEADER -->
+
+            <div class="experience-header">
+
+                <p class="page-label">
+                    MY EXPERIENCE
+                </p>
+
+                <h1>
+                    Experience
+                </h1>
+
+                <p>
+
+                    My practical learning experience includes
+                    internships, technical programs, and hands-on
+                    exposure to Artificial Intelligence, Machine
+                    Learning, Cloud Computing, and related technologies.
+
+                </p>
+
+            </div>
+
+
+            <!-- BRAINIC AI INTERNSHIP -->
+
+            <div class="experience-card">
+
+                <div class="experience-top">
+
+                    <div class="experience-title">
+
+                        <h2>
+                            Artificial Intelligence
+                            Short-Term Internship
+                        </h2>
+
+                        <h3>
+                            Brainic Academy
+                        </h3>
+
+                    </div>
+
+                    <div class="experience-date">
+                        July 2026
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Successfully completed the Artificial Intelligence
+                    Short-Term Internship Program. The internship included
+                    practical learning and an industry-focused capstone
+                    project.
+
+                </p>
+
+
+                <ul class="experience-list">
+
+                    <li>
+                        Gained practical exposure to Artificial Intelligence
+                        concepts.
+                    </li>
+
+                    <li>
+                        Worked through an industry-focused capstone project.
+                    </li>
+
+                    <li>
+                        Strengthened understanding of AI-related technologies
+                        through hands-on learning.
+                    </li>
+
+                </ul>
+
+
+                <div class="experience-tags">
+
+                    <span>
+                        Artificial Intelligence
+                    </span>
+
+                    <span>
+                        Machine Learning
+                    </span>
+
+                    <span>
+                        Python
+                    </span>
+
+                    <span>
+                        Capstone Project
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CODEALPHA CLOUD INTERNSHIP -->
+
+            <div class="experience-card">
+
+                <div class="experience-top">
+
+                    <div class="experience-title">
+
+                        <h2>
+                            Cloud Computing
+                            Virtual Internship
+                        </h2>
+
+                        <h3>
+                            CodeAlpha
+                        </h3>
+
+                    </div>
+
+                    <div class="experience-date">
+                        Aug – Sep 2026
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Successfully completed the CodeAlpha Virtual
+                    Internship Program in Cloud Computing from
+                    20 August 2026 to 20 September 2026.
+
+                </p>
+
+
+                <ul class="experience-list">
+
+                    <li>
+                        Gained exposure to cloud computing concepts
+                        and technologies.
+                    </li>
+
+                    <li>
+                        Developed practical understanding through
+                        the virtual internship program.
+                    </li>
+
+                    <li>
+                        Strengthened technical knowledge related
+                        to cloud computing.
+                    </li>
+
+                </ul>
+
+
+                <div class="experience-tags">
+
+                    <span>
+                        Cloud Computing
+                    </span>
+
+                    <span>
+                        Cloud Technologies
+                    </span>
+
+                    <span>
+                        Virtual Internship
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPERIENCE NOTE -->
+
+            <div class="experience-note">
+
+                <p>
+
+                    <strong style="color:#60a5fa;">
+                        Note:
+                    </strong>
+
+                    My experience section highlights verified
+                    internship programs and practical learning
+                    experiences. My individual projects are
+                    presented separately in the Projects section.
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
+```

@@ -1,0 +1,731 @@
+```css
+/* ========================================
+   GLOBAL RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ========================================
+   SIDEBAR
+======================================== */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    background: #111827;
+
+    border-right: 1px solid #1f2937;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 35px 25px;
+
+    z-index: 1000;
+}
+
+
+/* ========================================
+   PROFILE
+======================================== */
+
+.profile {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile-circle {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    color: white;
+
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+.profile h2 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+
+/* ========================================
+   SIDEBAR NAVIGATION
+======================================== */
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    flex: 1;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 13px 16px;
+
+    border-radius: 10px;
+
+    color: #9ca3af;
+
+    font-size: 15px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.sidebar-nav a span {
+    width: 24px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.sidebar-nav a:hover {
+    background: #1f2937;
+    color: white;
+
+    transform: translateX(5px);
+}
+
+.sidebar-nav a.active {
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+
+/* ========================================
+   SIDEBAR SOCIAL LINKS
+======================================== */
+
+.sidebar-social {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #1f2937;
+}
+
+.sidebar-social a {
+    padding: 8px 12px;
+
+    border: 1px solid #374151;
+
+    border-radius: 8px;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.sidebar-social a:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+
+    color: white;
+}
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.main-content {
+    margin-left: 280px;
+
+    min-height: 100vh;
+
+    width: calc(100% - 280px);
+}
+
+
+/* ========================================
+   HERO PAGE
+======================================== */
+
+.hero-page {
+    min-height: 100vh;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(37, 99, 235, 0.16),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(124, 58, 237, 0.12),
+            transparent 35%
+        );
+}
+
+
+/* ========================================
+   HERO CONTENT
+======================================== */
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero-small-title {
+    color: #60a5fa;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+.hero-content h1 {
+    font-size: clamp(50px, 6vw, 88px);
+
+    line-height: 1.05;
+
+    color: white;
+
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #a78bfa
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content h2 {
+    font-size: 27px;
+
+    font-weight: 400;
+
+    color: #cbd5e1;
+
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 680px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #94a3b8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   HERO BUTTONS
+======================================== */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 15px 28px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.primary-button {
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+
+    color: white;
+
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+.secondary-button {
+    border: 1px solid #374151;
+
+    background: #111827;
+
+    color: #e5e7eb;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    transform: translateY(-4px);
+}
+
+.primary-button:hover {
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.4);
+}
+
+.secondary-button:hover {
+    border-color: #60a5fa;
+}
+
+
+/* ========================================
+   HERO CARD
+======================================== */
+
+.hero-card {
+    width: 390px;
+
+    min-width: 320px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #172033,
+            #0f172a
+        );
+
+    border: 1px solid #263449;
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.35);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    opacity: 0.12;
+
+    filter: blur(40px);
+
+    top: -60px;
+    right: -50px;
+}
+
+.hero-card-top {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.hero-card-top span {
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #1e3a8a;
+
+    color: #bfdbfe;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.hero-card h3 {
+    font-size: 30px;
+
+    line-height: 1.3;
+
+    color: white;
+
+    margin-bottom: 18px;
+}
+
+.hero-card > p {
+    color: #94a3b8;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   HERO STATS
+======================================== */
+
+.hero-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    border-top: 1px solid #273449;
+
+    padding-top: 25px;
+}
+
+.hero-stats div {
+    text-align: center;
+}
+
+.hero-stats strong {
+    display: block;
+
+    font-size: 20px;
+
+    color: #60a5fa;
+
+    margin-bottom: 5px;
+}
+
+.hero-stats small {
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .hero-page {
+        padding: 70px 5%;
+    }
+
+    .hero-card {
+        width: 340px;
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        border-right: none;
+
+        border-bottom: 1px solid #1f2937;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .sidebar-social {
+        margin-top: 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+
+        width: 100%;
+    }
+
+    .hero-page {
+        flex-direction: column;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: min(100%, 450px);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        padding: 25px 15px;
+    }
+
+    .sidebar-nav {
+        gap: 5px;
+    }
+
+    .sidebar-nav a {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .sidebar-nav a span {
+        display: none;
+    }
+
+    .hero-page {
+        padding: 60px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-card {
+        padding: 30px 25px;
+    }
+
+    .hero-card h3 {
+        font-size: 25px;
+    }
+
+}
+```
+/* ========================================
+   RESUME PAGE
+======================================== */
+
+.resume-page {
+    min-height: 100vh;
+    padding: 80px 8%;
+}
+
+.resume-header {
+    max-width: 800px;
+    margin-bottom: 35px;
+}
+
+.page-label {
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.resume-header h1 {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.resume-header p {
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.resume-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.resume-preview {
+    width: 100%;
+    height: 900px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #263449;
+}
+
+.resume-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Resume page responsive */
+
+@media (max-width: 600px) {
+
+    .resume-page {
+        padding: 50px 20px;
+    }
+
+    .resume-header h1 {
+        font-size: 40px;
+    }
+
+    .resume-preview {
+        height: 650px;
+    }
+
+}
+/* ========================================
+   RESUME PDF VIEWER
+======================================== */
+
+.resume-preview {
+    width: 100%;
+    height: 900px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #263449;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.resume-preview iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}

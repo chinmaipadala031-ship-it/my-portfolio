@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Achievements | Padala Chinmai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .achievements-page {
+            min-height: 100vh;
+            padding: 80px 8%;
+        }
+
+        .achievements-header {
+            max-width: 900px;
+            margin-bottom: 50px;
+        }
+
+        .achievements-header h1 {
+            font-size: 55px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .achievements-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+        }
+
+        .achievement-card {
+            background: linear-gradient(145deg, #172033, #0f172a);
+            border: 1px solid #263449;
+            border-radius: 20px;
+            padding: 35px;
+            transition: 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement-card::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #3b82f6;
+            opacity: 0.08;
+            border-radius: 50%;
+            top: -40px;
+            right: -40px;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+        }
+
+        .achievement-icon {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .achievement-card h2 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .achievement-card h3 {
+            color: #60a5fa;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+        .achievement-card p {
+            color: #94a3b8;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .achievement-date {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 7px 13px;
+            border-radius: 20px;
+            background: #111827;
+            border: 1px solid #334155;
+            color: #cbd5e1;
+            font-size: 13px;
+        }
+
+        .achievement-highlight {
+            max-width: 1100px;
+            margin-top: 40px;
+            padding: 28px;
+            background: #111827;
+            border-left: 4px solid #3b82f6;
+            border-radius: 10px;
+        }
+
+        .achievement-highlight p {
+            color: #94a3b8;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        @media (max-width: 800px) {
+            .achievement-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .achievements-page {
+                padding: 50px 20px;
+            }
+
+            .achievements-header h1 {
+                font-size: 40px;
+            }
+
+            .achievements-header p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="profile">
+            <div class="profile-circle">PC</div>
+
+            <h2>Padala Chinmai</h2>
+
+            <p>AI/ML Student</p>
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html">
+                <span>⌂</span> Home
+            </a>
+
+            <a href="about.html">
+                <span>👤</span> About
+            </a>
+
+            <a href="skills.html">
+                <span>⚙</span> Skills
+            </a>
+
+            <a href="education.html">
+                <span>🎓</span> Education
+            </a>
+
+            <a href="projects.html">
+                <span>💻</span> Projects
+            </a>
+
+            <a href="experience.html">
+                <span>💼</span> Experience
+            </a>
+
+            <a href="certifications.html">
+                <span>📜</span> Certifications
+            </a>
+
+            <a href="achievements.html" class="active">
+                <span>🏆</span> Achievements
+            </a>
+
+            <a href="resume.html">
+                <span>📄</span> Resume
+            </a>
+
+            <a href="contact.html">
+                <span>✉</span> Contact
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-social">
+
+            <a href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/chinmaipadala031-sh"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <section class="achievements-page">
+
+            <div class="achievements-header">
+
+                <p class="page-label">
+                    MY ACHIEVEMENTS
+                </p>
+
+                <h1>
+                    Achievements
+                </h1>
+
+                <p>
+                    My achievements reflect my participation in technical events,
+                    hackathons, workshops, and continuous learning activities
+                    in the field of Artificial Intelligence and technology.
+                </p>
+
+            </div>
+
+
+            <!-- ACHIEVEMENT CARDS -->
+
+            <div class="achievement-grid">
+
+
+                <!-- ACHIEVEMENT 1 -->
+
+                <div class="achievement-card">
+
+                    <div class="achievement-icon">
+                        🏆
+                    </div>
+
+                    <h2>
+                        NN Hackathon 2026
+                    </h2>
+
+                    <h3>
+                        NN AI Solutions
+                    </h3>
+
+                    <p>
+                        Participated in NN Hackathon 2026 and gained
+                        hands-on exposure to problem solving, teamwork,
+                        innovation, and technology-based development.
+                    </p>
+
+                    <span class="achievement-date">
+                        September 2026
+                    </span>
+
+                </div>
+
+
+                <!-- ACHIEVEMENT 2 -->
+
+                <div class="achievement-card">
+
+                    <div class="achievement-icon">
+                        💡
+                    </div>
+
+                    <h2>
+                        HackWithHyderabad 3.0
+                    </h2>
+
+                    <h3>
+                        8-Hour Technology Hackathon
+                    </h3>
+
+                    <p>
+                        Participated in HackWithHyderabad 3.0, an
+                        intensive technology hackathon that provided
+                        practical exposure to innovation, collaboration,
+                        and rapid problem solving.
+                    </p>
+
+                    <span class="achievement-date">
+                        October 2026
+                    </span>
+
+                </div>
+
+
+                <!-- ACHIEVEMENT 3 -->
+
+                <div class="achievement-card">
+
+                    <div class="achievement-icon">
+                        🤖
+                    </div>
+
+                    <h2>
+                        Generative AI Workshop
+                    </h2>
+
+                    <h3>
+                        Brainic Academy
+                    </h3>
+
+                    <p>
+                        Completed a Generative AI workshop covering
+                        Gen AI foundations, automation tools, AI agents,
+                        LLMs, and modern AI tools.
+                    </p>
+
+                    <span class="achievement-date">
+                        August 2026
+                    </span>
+
+                </div>
+
+
+                <!-- ACHIEVEMENT 4 -->
+
+                <div class="achievement-card">
+
+                    <div class="achievement-icon">
+                        🚀
+                    </div>
+
+                    <h2>
+                        Technical Project Development
+                    </h2>
+
+                    <h3>
+                        AI & Technology Projects
+                    </h3>
+
+                    <p>
+                        Developed multiple academic and technical projects
+                        including an AI Chatbot, EAPCET College Prediction
+                        System, Bus Pass Booking System, and Data Redundancy System.
+                    </p>
+
+                    <span class="achievement-date">
+                        Project Experience
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- HIGHLIGHT -->
+
+            <div class="achievement-highlight">
+
+                <p>
+                    <strong style="color:#60a5fa;">
+                        Continuous Learning:
+                    </strong>
+
+                    I actively participate in hackathons, workshops,
+                    internships, and technical projects to strengthen
+                    my practical knowledge and build real-world skills
+                    in Artificial Intelligence, Machine Learning,
+                    Cloud Computing, and emerging technologies.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

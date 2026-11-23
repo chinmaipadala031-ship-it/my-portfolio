@@ -1,0 +1,377 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Padala Chinmai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .about-page {
+            min-height: 100vh;
+            padding: 80px 8%;
+        }
+
+        .about-header {
+            max-width: 900px;
+            margin-bottom: 50px;
+        }
+
+        .about-header h1 {
+            font-size: 55px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .about-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .about-card {
+            background: linear-gradient(145deg, #172033, #0f172a);
+            border: 1px solid #263449;
+            border-radius: 20px;
+            padding: 30px;
+            transition: 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-6px);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-card h2 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .about-card p {
+            color: #94a3b8;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .about-card strong {
+            color: #60a5fa;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-list li {
+            color: #cbd5e1;
+            padding: 10px 0;
+            border-bottom: 1px solid #263449;
+            line-height: 1.6;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-list strong {
+            color: #60a5fa;
+        }
+
+        @media (max-width: 900px) {
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .about-page {
+                padding: 50px 20px;
+            }
+
+            .about-header h1 {
+                font-size: 40px;
+            }
+
+            .about-header p {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="profile">
+
+            <div class="profile-circle">
+                PC
+            </div>
+
+            <h2>
+                Padala Chinmai
+            </h2>
+
+            <p>
+                AI/ML Student
+            </p>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="about.html" class="active">
+                <span>👤</span>
+                About
+            </a>
+
+            <a href="skills.html">
+                <span>⚙</span>
+                Skills
+            </a>
+
+            <a href="education.html">
+                <span>🎓</span>
+                Education
+            </a>
+
+            <a href="projects.html">
+                <span>💻</span>
+                Projects
+            </a>
+
+            <a href="experience.html">
+                <span>💼</span>
+                Experience
+            </a>
+
+            <a href="certifications.html">
+                <span>📜</span>
+                Certifications
+            </a>
+
+            <a href="achievements.html">
+                <span>🏆</span>
+                Achievements
+            </a>
+
+            <a href="resume.html">
+                <span>📄</span>
+                Resume
+            </a>
+
+            <a href="contact.html">
+                <span>✉</span>
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="sidebar-social">
+
+            <a
+                href="https://www.linkedin.com/in/padala-chinmai-0a3380428"
+                target="_blank">
+                LinkedIn
+            </a>
+
+            <a
+                href="https://github.com/chinmaipadala031-sh"
+                target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <section class="about-page">
+
+
+            <!-- HEADER -->
+
+            <div class="about-header">
+
+                <p class="page-label">
+                    ABOUT ME
+                </p>
+
+                <h1>
+                    About Me
+                </h1>
+
+                <p>
+
+                    I am Padala Chinmai, a B.Tech student specializing
+                    in Artificial Intelligence and Machine Learning.
+                    I am interested in building practical technology
+                    solutions using AI, machine learning, Python,
+                    and modern software technologies.
+
+                </p>
+
+            </div>
+
+
+            <!-- ABOUT CARDS -->
+
+            <div class="about-grid">
+
+
+                <!-- CARD 1 -->
+
+                <div class="about-card">
+
+                    <h2>
+                        Who I Am
+                    </h2>
+
+                    <p>
+
+                        I am an Artificial Intelligence and Machine
+                        Learning student with a strong interest in
+                        learning new technologies and developing
+                        real-world applications.
+
+                        <br><br>
+
+                        I enjoy working on projects that allow me
+                        to combine programming, problem solving,
+                        artificial intelligence, and practical
+                        software development.
+
+                    </p>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="about-card">
+
+                    <h2>
+                        My Career Goal
+                    </h2>
+
+                    <p>
+
+                        My goal is to build a career in the AI and
+                        Machine Learning field and contribute to
+                        meaningful technology projects.
+
+                        <br><br>
+
+                        I am continuously improving my technical
+                        knowledge through projects, workshops,
+                        internships, hackathons, and certifications.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- EDUCATION INFO -->
+
+            <div class="about-card">
+
+                <h2>
+                    Personal & Academic Information
+                </h2>
+
+                <ul class="info-list">
+
+                    <li>
+                        <strong>Name:</strong>
+                        Padala Chinmai
+                    </li>
+
+                    <li>
+                        <strong>Degree:</strong>
+                        B.Tech – Artificial Intelligence & Machine Learning
+                    </li>
+
+                    <li>
+                        <strong>College:</strong>
+                        Kakatiya Institute of Technology & Science for Women
+                    </li>
+
+                    <li>
+                        <strong>Intermediate:</strong>
+                        SR Junior College, Vinayak Nagar
+                    </li>
+
+                    <li>
+                        <strong>Intermediate Score:</strong>
+                        69.1
+                    </li>
+
+                    <li>
+                        <strong>SSC:</strong>
+                        Abhyasa The School, Vinayak Nagar
+                    </li>
+
+                    <li>
+                        <strong>SSC GPA:</strong>
+                        9.0
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
